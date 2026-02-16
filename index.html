@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniil - Portfolio</title>
+    <meta name="description"
+        content="Daniil Panchenko — Full-Stack Web Developer portfolio. JavaScript, PHP, MySQL, modern UI/UX. Based in Göttingen, Germany. Available for remote work.">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <h2>D.</h2>
+                </div>
+                <p class="tagline">Full-Stack Web Developer</p>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active" data-tooltip="Home"><i class="fas fa-home"></i>
+                            <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link" data-tooltip="About Me"><i class="fas fa-user"></i>
+                            <span>About</span></a></li>
+                    <li><a href="#skills" class="nav-link" data-tooltip="Technical Skills"><i class="fas fa-code"></i>
+                            <span>Skills</span></a></li>
+                    <li><a href="#contact" class="nav-link" data-tooltip="Contact Me"><i class="fas fa-envelope"></i>
+                            <span>Contact</span></a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links">
+                <a href="https://github.com/3HugaDa3" class="social-link" data-tooltip="GitHub" target="_blank"
+                    rel="noopener"><i class="fab fa-github"></i></a>
+                <a href="https://t.me/+Z6A3NHAJPMMwYWUy" class="social-link" data-tooltip="Telegram" target="_blank"
+                    rel="noopener"><i class="fab fa-telegram"></i></a>
+                <a href="mailto:pancenkod487@gmail.com" class="social-link" data-tooltip="Email"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://www.instagram.com/daniil_panchen/" class="social-link" data-tooltip="Instagram"
+                    target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="theme-toggle">
+                    <button id="themeToggle" class="theme-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-progress"></div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Animated Background -->
+            <div class="particles-bg" id="particlesBg"></div>
+            <div class="constellation-layer" aria-hidden="true"></div>
+
+            <!-- Hero Section -->
+            <section id="home" class="section hero">
+                <div class="hero-bg-gradient"></div>
+                <div class="hero-particles" id="heroParticles"></div>
+                <div class="hero-content" data-aos="fade-up">
+                    <div class="hero-grid">
+                        <div class="hero-text">
+                            <div class="hero-badge">Available for work</div>
+                            <h1 class="hero-title">Hi, I'm <span class="highlight">Daniil</span></h1>
+                            <p class="hero-subtitle">Full-Stack Web Developer • JavaScript • PHP • UI/UX</p>
+                            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+                                <a href="#about" class="btn btn-primary">
+                                    <span>About Me</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                                <a href="#contact" class="btn btn-secondary">
+                                    <span>Get In Touch</span>
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero-visual" aria-hidden="true">
+                            <div class="orbit-ring ring-one"></div>
+                            <div class="orbit-ring ring-two"></div>
+                            <div class="floating-badge">Web Dev • JS • PHP • UI/UX</div>
+                            <div class="laptop">
+                                <div class="laptop-screen">
+                                    <div class="screen-glow"></div>
+                                    <div class="code-lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="laptop-base">
+                                    <div class="laptop-trackpad"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-scroll" data-aos="fade-up" data-aos-delay="400">
+                    <div class="scroll-mouse">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                    <p>Scroll down</p>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2 class="section-title" data-aos="fade-right">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text" data-aos="fade-up">
+                        <p>I'm a web developer from Ukraine, currently living and studying in Germany.</p>
+                        <p>With 4 years of experience in web development, I specialize in creating engaging and
+                            interactive web experiences.</p>
+                        <div class="about-stats">
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="0">
+                                <span class="stat-number" data-target="15" data-suffix="+">0</span>
+                                <span class="stat-label">Projects Done</span>
+                            </div>
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                                <span class="stat-number" data-target="4" data-suffix="+">0</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                                <span class="stat-number" data-target="100" data-suffix="%">0</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-info" data-aos="fade-left">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Daniil Panchenko</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Göttingen, Germany</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Education:</span>
+                            <span class="info-value">Studying in Germany</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Specialization:</span>
+                            <span class="info-value">Full-Stack Development</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">pancenkod487@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Experience:</span>
+                            <span class="info-value">4+ Years</span>
+                        </div>
+                        <div class="cv-download">
+                            <a href="#" class="btn btn-outline">
+                                <i class="fas fa-download"></i>
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2 class="section-title" data-aos="fade-right">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">JavaScript</div>
+                            <div class="skill-item">HTML5</div>
+                            <div class="skill-item">CSS3</div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="150">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">PHP</div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Database</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">MySQL</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section">
+                <h2 class="section-title" data-aos="fade-right">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p>I'm always interested in hearing about new ideas and opportunities. Available for remote work
+                            and open to collaborations.</p>
+                        <div class="contact-details">
+                            <div class="contact-item" data-aos="fade-right" data-aos-delay="0">
+                                <i class="fas fa-envelope"></i>
+                                <span>pancenkod487@gmail.com</span>
+                            </div>
+                            <div class="contact-item" data-aos="fade-right" data-aos-delay="100">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Göttingen, Germany</span>
+                            </div>
+                            <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Available for remote work</span>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <p class="contact-social-title">Connect with me</p>
+                            <div class="contact-social-links">
+                                <a href="https://github.com/3HugaDa3" class="social-link" target="_blank" rel="noopener"
+                                    aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://t.me/+Z6A3NHAJPMMwYWUy" class="social-link" target="_blank"
+                                    rel="noopener" aria-label="Telegram">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                                <a href="https://www.instagram.com/daniil_panchen/" class="social-link" target="_blank"
+                                    rel="noopener" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="name">Name</label>
+                                <input type="text" id="name" name="name" autocomplete="name" required
+                                    aria-describedby="nameError">
+                                <div class="form-error" id="nameError"></div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email</label>
+                                <input type="email" id="email" name="email" autocomplete="email" required
+                                    aria-describedby="emailError">
+                                <div class="form-error" id="emailError"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" autocomplete="off"
+                                aria-describedby="subjectHint">
+                            <div class="form-hint" id="subjectHint">Optional</div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required
+                                aria-describedby="messageError"></textarea>
+                            <div class="form-error" id="messageError"></div>
+                        </div>
+                        <div class="form-status" aria-live="polite"></div>
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-spinner" aria-hidden="true"></span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
